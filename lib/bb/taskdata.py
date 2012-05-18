@@ -33,6 +33,7 @@ def re_match_strings(target, strings):
     import re
 
     for name in strings:
+        name = name.replace("+","\+");
         if (name==target or
                 re.search(name,target)!=None):
             return True
